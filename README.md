@@ -8,9 +8,8 @@ shopkeeper needs before they run out of stock.
 
 ## Dataset
 - Source: [Kaggle Store Sales Time Series Forecasting](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data)
-- Features include:
-  - `store_nbr`, `family`, `date`, `sales`, `onpromotion`
-- Data was cleaned and structured with **calendar features, lag features, and rolling averages**.
+- Download `train.csv` and `test.csv` and place them in the same folder as the notebook
+- Features include `store_nbr`, `family`, `date`, `sales`, `onpromotion`
 
 ## Features Engineered
 - Calendar: day_of_week, is_weekend, month, week_of_year
@@ -26,7 +25,6 @@ shopkeeper needs before they run out of stock.
 
 ## Results
 - RMSE: 389.02
-- Actual vs Predicted Sales plot: see `notebooks/03_modeling.ipynb`
 
 ## Limitations
 Model performs well on regular sales patterns but underestimates sudden demand 
@@ -35,11 +33,9 @@ would be trying Facebook Prophet or LSTM for better spike detection.
 
 ## How to Run
 1. Clone repo
-2. Install requirements: `pip install -r requirements.txt`
-3. Run notebooks in order:
-   - `01_eda.ipynb`
-   - `02_feature_engineering.ipynb`
-   - `03_modeling.ipynb`
+2. Download dataset from Kaggle link above and place in same folder
+3. Install requirements: `pip install pandas numpy matplotlib seaborn scikit-learn`
+4. Open and run `retail_demand_forecasting.ipynb`
 
 ## Insights
 - Sales have **weekly seasonality**, higher on weekends for many families.
