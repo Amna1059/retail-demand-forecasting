@@ -3,7 +3,7 @@
 ## Overview
 This project predicts daily sales for retail stores using historical sales data, 
 promotions, and calendar features.  
-Built to understand the exact problem Tajir is solving — predicting what a 
+Built to understand the exact problem Tajir is solving predicting what a 
 shopkeeper needs before they run out of stock.
 
 ## Dataset
@@ -28,8 +28,7 @@ shopkeeper needs before they run out of stock.
 
 ## Limitations
 Model performs well on regular sales patterns but underestimates sudden demand 
-spikes — a known limitation of tree-based models on time series data. Next step 
-would be trying Facebook Prophet or LSTM for better spike detection.
+spikes a known limitation of tree-based models on time series data. 
 
 ## How to Run
 1. Clone repo
